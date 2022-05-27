@@ -1,38 +1,133 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  height: 100%;
+  padding-bottom: 10px;
   background-color: #282c34;
-  min-height: 100vh;
+}
+
+.p-20 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: aliceblue;
+  margin: 0px;
+  padding: 10px;
+}
+
+.movie-card-list {
+  display: flex;
+  max-width: 100%;
+  padding-left: 20px;
+  overflow-x: auto;
+}
+
+.movie-card-list::-webkit-scrollbar {
+  background-color: #fff;
+  width: 80vw;
+  margin: auto;
+}
+
+.movie-card-list::-webkit-scrollbar-thumb {
+  background-color: brown;
+  border-radius: 20px;
+}
+
+.movie-card {
+  height: 300px;
+  width: 200px;
+  min-width: 200px;
+  margin-right: 20px;
+  background-color: brown;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  margin-bottom: 10px;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+
+.movie-card:hover {
+  background-color: #282c34;
+  box-shadow: 10px 5px 5px brown;
+  color: brown;
+}
+
+.movie-title {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.theatre {
+  border: 1px solid brown;
+  height: 80vh;
+  margin: 10px;
+  padding: 40px 0;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.empty-theatre {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  width: 100%;
+}
+
+.poster {
+  color: aliceblue;
+  text-align: center;
+  /* border-right: 10px solid brown; */
+  /* border-bottom: 10px solid brown; */
+  flex-basis: 20%;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.seats {
+  flex-basis: 80%;
+  display: flex;
+  align-self: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  /* flex-direction: column; */
+  overflow: auto;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seat {
+  background-color: green;
+  color: aliceblue;
+  padding: 10px;
+  border: 0;
+}
+
+.seat-pointer {
+  padding: 10px;
+}
+
+.seat-available {
+  padding: 10px;
+  background-color: green;
+}
+
+.seat-sold-out {
+  padding: 10px;
+  background-color: brown;
+}
+
+.seat:hover {
+  cursor: pointer;
 }
