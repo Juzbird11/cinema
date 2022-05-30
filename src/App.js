@@ -19,7 +19,11 @@ function App() {
   const toggleStatus = (movie, seat) => {
     movie.seats[seat] = !movie.seats[seat];
 
-    setMovies([...movies]);
+    setMovies(
+      movies.map(m => {
+        return m.name === movie.name ? movie: m;
+      })
+    );
   }
 
   return (

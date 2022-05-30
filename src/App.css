@@ -1,6 +1,5 @@
-.App {
+body {
   height: 100%;
-  padding-bottom: 10px;
   background-color: #282c34;
 }
 
@@ -78,10 +77,15 @@
 }
 
 .empty-theatre {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   color: aliceblue;
+}
+
+.empty-seats {
   width: 100%;
+  color: aliceblue;
+  text-align: center;
 }
 
 .poster {

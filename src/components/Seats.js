@@ -1,9 +1,5 @@
 
 function Seats(props) {
-    // const toggle = () => {
-    //     props.toggleStatus(1);
-    // };
-
     return (
         <div className="seats">
             { props.seats.map((seat, key) =>

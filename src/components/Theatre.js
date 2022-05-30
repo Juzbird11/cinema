@@ -30,7 +30,7 @@ function Theatre({updateSeat}) {
                 <h2 className="title">Theatre</h2>
                 <div className="theatre">
                     <Poster movie={movie} />
-                    <div className="empty-theatre">
+                    <div className="empty-seats">
                         <h1>Unavailable Seats</h1>
                     </div>
                 </div>
