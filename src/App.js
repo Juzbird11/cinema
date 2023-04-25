@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <MovieOnShowing movies={movies} />
       <Routes>
-        <Route path="/" element={<Theatre updateSeat={toggleStatus} />} />
+        <Route path="*" element={<Theatre updateSeat={toggleStatus} />} />
       </Routes>
     </div>
   );
