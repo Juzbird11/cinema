@@ -11,7 +11,7 @@ function App() {
     { name: 'Dr Strange', duration: '1hr 12m', release: '2022', seats: Array(20).fill(true)},
     { name: 'Thor:Love and Thunder', duration: '1hr 18m', release: '2021', seats: Array(5).fill(true)},
     { name: 'Joker', duration: '1hr 18m', release: '2020', seats: Array(10).fill(true)},
-    { name: 'Once upon a time in hollywood', duration: '1hr 18m', release: '2020'},
+    // { name: 'Once upon a time in hollywood', duration: '1hr 18m', release: '2020'},
   ];
 
   const [movies, setMovies] = useState(dummyDatas);
